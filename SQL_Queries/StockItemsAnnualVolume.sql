@@ -12,8 +12,6 @@ JOIN
 JOIN
   `lab3-bi-20252.lab3_bi_conjunto.DimStockItem`  AS s
   ON f.StockItemID = s.StockItemID
--- si quieres limitar a un rango de años:
--- WHERE d.Year BETWEEN 2013 AND 2014
 GROUP BY
   d.Year,
   f.StockItemID,
